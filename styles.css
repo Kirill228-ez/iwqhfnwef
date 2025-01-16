@@ -1,0 +1,250 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #fff9c4; /* Легкий желтый фон */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(135deg, #ffeb3b, #fbc02d); /* Яркий желтый градиент */
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #ffeb3b;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.intro-text {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    animation: fadeInUp 3s ease-out;
+}
+
+/* Навигация */
+.nav {
+    background: #ffb300; /* Яркий желтый оттенок */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #fbc02d;
+    border-radius: 10px;
+}
+
+/* Секция Главная */
+.home {
+    background: #fff9c4; /* Легкий желтый фон */
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    color: #ffb300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease-out;
+}
+
+.highlight-text {
+    font-size: 1.5rem;
+    color: #f57f17;
+    margin-top: 20px;
+}
+
+/* Кнопки */
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ffb300;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.cta-btn:hover {
+    background-color: #fbc02d;
+}
+
+/* История */
+.history {
+    background: #fff9c4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.history-content {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #ffb300;
+}
+
+.history-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.history-img {
+    width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.history-img:hover {
+    transform: scale(1.05);
+}
+
+/* Польза */
+.benefits {
+    background: #fff9c4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.benefit-item {
+    background: #ffeb3b;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item h3 {
+    color: #f57f17;
+}
+
+.benefit-item p {
+    color: #f57f17;
+}
+
+/* Рецепты */
+.recipe-card {
+    background: #ffeb3b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-btn {
+    background: #ffb300;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-btn:hover {
+    background-color: #fbc02d;
+}
+
+/* Галерея */
+.gallery {
+    background: #fff9c4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Контакты */
+.contact {
+    background: #ffeb3b;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-btn {
+    padding: 15px 30px;
+    background: #ffb300;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #fbc02d;
+}
+
+/* Footer */
+.footer {
+    background: #ffb300;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    font-size: 1.1rem;
+}
